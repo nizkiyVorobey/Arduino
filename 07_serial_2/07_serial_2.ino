@@ -16,8 +16,9 @@ void loop() {
   int ledPinBrithnes = map(readValue,0,1023, 0,255);
   String str1 = "readValue: " + String(readValue);
   String str2 = "readValue: " + String(ledPinBrithnes);
-  Serial.println(str1);
-  Serial.println(str2);
+//  Serial.println(str1);
+//  Serial.println(str2);
+  Serial.println(ledPinBrithnes);
   analogWrite(ledPin, ledPinBrithnes);
   delay(200);
 }
